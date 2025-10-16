@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Generador de Tags - Graffiti</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Generador de Tags</h1>
+    <div class="controls">
+      <input id="textInput" type="text" placeholder="Escribe un nombre o palabra" value="Nombre" maxlength="30" />
+      <button id="generateBtn">Generar Tag</button>
+      <button id="downloadBtn">Descargar PNG</button>
+      <label for="colorInput" class="color-label">Color sólido:</label>
+      <input id="colorInput" type="color" value="#000000"/>
+    </div>
+
+    <div id="outputWrap">
+      <!-- El texto renderizado aparece aquí -->
+      <div id="tagOutput" class="tag-output" aria-live="polite">Nombre</div>
+    </div>
+
+    <p class="notes">Tip: agrega tus fuentes en <code>/fonts/</code> y verifica sus nombres en <code>script.js</code>.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
